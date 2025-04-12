@@ -1,1 +1,53 @@
-/* This file is intentionally left blank. */
+body{
+    background: #803fa6;
+    background: linear-gradient(180deg, rgb(138, 19, 207) 20%, rgba(70, 30, 112) 80%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#Login-box{
+    width: 300px;
+    height: 20em;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffd35c;
+    background: linear-gradient(180deg, rgba(34, 36, 40, 1) 92%, rgba(63, 171, 39, 1) 92%);
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+#loginHeader{
+    text-align: center;
+    margin: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #FAF9F6;
+    font-weight: bolder;
+}
+
+#SptLabel{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: #FAF9F6;
+    font-size: x-large;
+    font-family: 'Arial', sans-serif;
+}
+
+#SptLogin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: x-large;
+    border-radius: 50px;
+    width: 60%;
+    height: 12%;
+    border-color:transparent;
+    box-shadow: 0 10px 10px rgba(243, 232, 232, 0.262);
+    
+}
