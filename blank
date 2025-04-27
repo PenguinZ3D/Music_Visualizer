@@ -1,0 +1,23 @@
+const clientId = '91ede157c4a545a88c763206c4827888';
+const redirectUri = 'http://127.0.0.1:5500/Spotify_Test.html';
+const scopes = [
+  'user-read-private',
+  'user-read-email',
+  'playlist-read-private',
+  // add more scopes depending on what you need
+];
+
+const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${encodeURIComponent(
+  redirectUri
+)}&scope=${encodeURIComponent(scopes.join(' '))}`;
+
+const loginButton = document.getElementById('Login_Button');
+
+loginButton.onclick = function () {
+  window.location.href = authUrl;
+
+}
+
+const urlParams = new URLSearchParams(window.location.search);
+const token = urlParams.get('access_token');
+
